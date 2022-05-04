@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+a.active {
+    color: var(--main-color);
+}
+.right-0 {
+    right: 0;
+}
+.left-0 {
+    left: 0
+}
+ul .color {
+    opacity: 0.5;
+}
+ul .color.active {
+    opacity: 1;
+    border: 3px solid #f8fafc;
+}
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

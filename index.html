@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Sans Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Special Design</title>
+    <style>
+        :root {
+            --main-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing section -->
+    <section id="landing" class="relative z-20 p-4 min-h-screen overflow-hidden bg-land-1 bg-cover md:px-8">
+        <!-- Overlay -->
+        <div class="absolute w-full h-full bg-overlay top-0 left-0 -z-10"></div>
+        <!-- Header -->
+        <header class="flex justify-between items-center w-full text-white relative z-10">
+            <!-- Logo -->
+            <div class="font-bold text-2xl text-mainColor tracking-wide">Mohamed Bediwe</div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex gap-4">
+                <div><a class="transition-colors active hover:text-mainColor" href="#about">About</a></div>
+                <div><a class="transition-colors hover:text-mainColor" href="#products">Products</a></div>
+                <div><a class="transition-colors hover:text-mainColor" href="#pricing">Pricing</a></div>
+                <div><a class="transition-colors hover:text-mainColor" href="#testmonials">Testmonials</a></div>
+                <div><a class="transition-colors hover:text-mainColor" href="#contact">Contact</a></div>
+            </nav>
+            <div class="flex flex-col gap-1 cursor-pointer md:hidden burger-menu">
+                <div class="h-0.5 w-5 bg-white"></div>
+                <div class="h-0.5 w-5 bg-white"></div>
+                <div class="h-0.5 w-5 bg-white"></div>
+            </div>
+        </header>
+        <!-- Small Screens Nav -->
+        <nav id="mobile-nav" class="flex flex-col items-center justify-between transition-all h-5/6 py-4 gap-4 absolute z-30 -right-1/2 top-12 w-1/2 bg-black md:hidden">
+            <div><a class="transition-colors w-full flex items-center justify-center py-2 active hover:text-white" href="#about">About</a></div>
+            <div><a class="transition-colors w-full  flex items-center py-2 justify-center text-white hover:text-mainColor" href="#products">Products</a></div>
+            <div><a class="transition-colors w-full flex items-center justify-center py-2  text-white hover:text-mainColor" href="#pricing">Pricing</a></div>
+            <div><a class="transition-colors w-full flex items-center justify-center py-2  text-white hover:text-mainColor" href="#testmonials">Testmonials</a></div>
+            <div><a class="transition-colors w-full flex items-center justify-center py-2 text-white hover:text-mainColor" href="#contact">Contact</a></div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="absolute left-2/4 top-2/4 w-full flex flex-col items-center justify-center -translate-y-1/2 -translate-x-1/2 z-20 text-center">
+            <h1 class="text-4xl w-3/4 font-bold mb-8 text-white">We Are <span class="text-mainColor">Creative</span> Agency</h1>
+            <p class="w-3/4 max-w-xl leading-relaxed text-xl text-slate-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia dolorem enim consequuntur perferendis autem.</p>
+        </div>
+    </section>
+    <!-- Setting box -->
+    <section id="setting" class="fixed -left-48 top-0 p-3 z-30 min-h-screen transition-all w-48 bg-slate-200">
+        <!-- Gear icon -->
+        <div id="gear-icon" class="absolute -right-8 p-2 top-24 bg-slate-200 cursor-pointer">
+            <img src="./imgs/gear.webp" alt="Settings" class="w-4 h-4">
+        </div>
+        <!-- Color options -->
+        <div class="flex flex-col gap-4 bg-gray-300 items-center py-2.5 px-1.5 mb-2">
+            <h4 class="text-lg font-sm">Colors</h4>
+            <ul class="flex gap-2">
+                <li data-color="#ff9800" class="color w-5 h-5 border-0 border-transparent border-solid rounded-full bg-[#ff9800] cursor-pointer"></li>
+                <li data-color="#b91c1c" class="color w-5 h-5 border-0 border-transparent border-solid rounded-full bg-red-700 cursor-pointer"></li>
+                <li data-color="#047857" class="color w-5 h-5 border-0 border-transparent border-solid rounded-full bg-emerald-700 cursor-pointer"></li>
+                <li data-color="#0369a1" class="color w-5 h-5 border-0 border-transparent border-solid rounded-full bg-sky-700 cursor-pointer"></li>
+                <li data-color="#334155" class="color w-5 h-5 border-0 border-transparent border-solid rounded-full bg-slate-700 cursor-pointer"></li>
+            </ul>
+        </div>
+        <!-- Random background -->
+        <div class="flex gap-4 bg-gray-300 items-center py-2.5 px-1.5 flex-col">
+            <h4 class="text-lg font-sm">Random Backgrounds</h4>
+            <div class="flex gap-2">
+                
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
