@@ -46,7 +46,7 @@ colorsLi.forEach(li => {
 })
 // Background Changer Function
 const bgImagesArray = ['bg-1.webp', 'bg-2.webp', 'bg-3.webp', 'bg-4.webp', 'bg-5.webp']
-// setInterval(() => {
-//     const randomNumber = Math.floor(Math.random() * bgImagesArray.length)
-//     landingSection.style.backgroundImage = `url(../imgs/${bgImagesArray[randomNumber]}`
-// }, 7500)
+setInterval(() => {
+    const randomNumber = Math.floor(Math.random() * bgImagesArray.length)
+    landingSection.style.backgroundImage = `url(../imgs/${bgImagesArray[randomNumber]}`
+}, 7500)
